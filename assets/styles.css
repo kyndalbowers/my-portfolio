@@ -10,11 +10,13 @@
     font-family: 'segoe script','ink free','mv boli','papyrus';
 }
 
+
 header nav {
-    margin-top:-50px;
-    margin-right: 400px;
+    margin-top:-80px;
+    margin-right: 0;
     float: right;
     font-size: 20px;
+    color: black;
 }
 
 header nav ul li {
@@ -27,11 +29,19 @@ main {
 }
 
 section {
-    width: 1500px;
+    width: 1490px;
     height: fit-content;
     text-align: center;
     border: 5px groove darkgray;
     margin: 5px
+}
+
+.todo {
+
+}
+
+#complete {
+    text-decoration:line-through;
 }
 
 article {
@@ -52,4 +62,8 @@ button {
 button:hover {
     border-style: outset;
     border-color: darkgray;
+}
+
+footer {
+    text-align: center;
 }
