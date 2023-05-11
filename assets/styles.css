@@ -1,19 +1,15 @@
-/*body {
-    background-image: url(./images/laptop.jpg);
-    height: 800px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-}
-*/
 * {
     font-family: 'segoe script','ink free','mv boli','papyrus';
 }
 
+header {
+    margin-left: 12%;
+    font-size: 30px;
+}
 
 header nav {
-    margin-top:-80px;
-    margin-right: 0;
+    margin-top: -5%;
+    margin-right: 10%;
     float: right;
     font-size: 20px;
     color: black;
@@ -21,23 +17,46 @@ header nav {
 
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 0;
+}
+
+body {
+    background-image: url(./images/notebook.jpg);
+    background-image 
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
 }
 
 main {
     display:block
 }
 
+h2 {
+    text-align: left;
+    margin-left: 3%;
+    border-bottom: 2px solid black;
+    font-size: 26px;
+}
+
+h2:before { 
+    content: '❃'
+}
+
 section {
-    width: 1490px;
+    width: 80%;
     height: fit-content;
+    align-content: right;
     text-align: center;
-    border: 5px groove darkgray;
-    margin: 5px
+    margin-left: 12%;
 }
 
 .todo {
-
+    text-align: left;
+    margin-left: 35%;
 }
 
 #complete {
