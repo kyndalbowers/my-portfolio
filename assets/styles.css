@@ -13,8 +13,28 @@ main {
 
 section {
     width: 1500px;
-    height: 600px;
+    height: fit-content;
     text-align: center;
-    border: 1px solid black;
+    border: 5px groove darkgray;
     margin: 5px
+}
+
+article {
+    display: inline;
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+}
+
+button {
+    border-style: none;
+    background-color: white;
+}
+
+button:hover {
+    border-style: outset;
+    border-color: darkgray;
 }
