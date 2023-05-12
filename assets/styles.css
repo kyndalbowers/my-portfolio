@@ -1,18 +1,21 @@
 * {
-    font-family: 'segoe script','ink free','mv boli','papyrus';
+    font-family: 'segoe script','papyrus','mv boli','ink free';
+    color: #302f2c;
 }
 
 header {
+    flex: 1 0 0;
     margin-left: 12%;
     font-size: 30px;
 }
 
 header nav {
-    margin-top: -5%;
-    margin-right: 10%;
+    margin-top: 2%;
+    margin-right: -10%;
     float: right;
-    font-size: 20px;
-    color: black;
+    font-size: 30px;
+    color: #302f2c;
+    rotate: 90deg;
 }
 
 header nav ul li {
@@ -28,22 +31,32 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 main {
     display:block
 }
 
+.polaroid {
+    position:absolute;
+    margin-left: 70%;
+    margin-top: -11%;
+}
+
 h2 {
     text-align: left;
     margin-left: 3%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #302f2c;
     font-size: 26px;
 }
 
 h2:before { 
     content: '❃'
+}
+
+#about {
+    text-align: left;
 }
 
 section {
@@ -52,11 +65,24 @@ section {
     align-content: right;
     text-align: center;
     margin-left: 12%;
+    margin-bottom: 0%;
+}
+
+#about {
+    margin-left: 3%;
+}
+
+#todo-header {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: -1%;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .todo {
     text-align: left;
-    margin-left: 35%;
+    margin-left: 5%;
 }
 
 #complete {
@@ -73,16 +99,27 @@ article {
     margin: 10px;
 }
 
+#coming-soon {
+    background-color: transparent;
+    border: none;
+}
+
 button {
-    border-style: none;
-    background-color: white;
+    background-color: transparent;
+    border: none;
 }
 
 button:hover {
-    border-style: outset;
-    border-color: darkgray;
+    background-color: transparent;
+    height:75px;
+    width:100px;
+    box-shadow: 0 0.5em 0.5em -0.4em transparent;
+    transform: translateY(-0.25em);
 }
 
 footer {
     text-align: center;
+    border-top: 3px solid #302f2c;
+    margin-left: 13%;
+    margin-right: 7%;
 }

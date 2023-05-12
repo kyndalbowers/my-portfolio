@@ -21,11 +21,13 @@
 </head>
 
 <header>
-    <h1> Hello there</h1>
+    <h1>Hello there...</h1>
     <nav>
         <ul>
             <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
+            <li> | </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li> | </li>
             <li><a href="#contact">Let's Chat</a></li>
         </ul>
     </nav>
@@ -33,9 +35,18 @@
 
 <body>
 <main>
-    <section class="content" id="about me">
+    <div class="polaroid">
+        <img src="./assets/images/polaroid.png" height="400px" width="400px">
+    </div>
+    <section class="content" id="aboutme">
         <h2>A Little About Me</h2>
-        My name is Kyndal. I don't really like talking about myself so I'll need to figure out what to put here.
+        <p id="about">My name is Kyndal! I'm currently located in Washington state.  I'm worked in the administrative field for over <br>  
+        16 years now and have decided to make a BIG change in my career path, which is why you're here!<br>
+        <br>
+        When I'm not working, in class or spending time with my kids, my hobbies include photography, riding my <br> 
+        motorcycle, and competitive speed shooting. I look forward to integrating my newly learned coding skills with my <br>
+        existing interests to create some really cool things!</p>
+        <p id="todo-header">My To Do List:</p>
         <ul>
             <li class="todo" id="complete">Dream of creating a better future for myself</li>
             <li class="todo" id="complete">Research coding bootcamps</li>
@@ -44,16 +55,18 @@
         </ul>
     </section>
     <section class="content" id="portfolio">
-        <h2>Accomplishments</h2>
-            <article>Item 1</article>
-            <article>Coming Soon!</article>
-            <article>Coming Soon!</article>
+        <h2>What I've Worked On</h2>
+            <article id="coming-soon"><img src="./assets/images/coming-soon.png" height="200px" width="200px"></article>
+            <article >Insert Horiseon info here</article>
+            <article id="coming-soon"><img src="./assets/images/coming-soon.png" height="200px" width="200px"></article>
     </section>
     <section class="content" id="contact">
         <h2>Let's Chat</h2>
-        <button class="button">
-            <img src="./assets/images/email.png" alt="email envelope icon" height="75px" width="100px" a href="mailto:kyndalbowers@gmail.com">
-        </button>
+        <button>
+        <a id="email-button" href="mailto:kyndalbowers@gmail.com">
+            <img src="./assets/images/email.png" alt="email envelope icon" height="150px" width="200px" background-color="transparent">
+        </a>
+    </button>
     </section>
 </main>
 </body>
