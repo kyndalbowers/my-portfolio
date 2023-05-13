@@ -11,7 +11,7 @@ header {
 
 header nav {
     margin-top: 2%;
-    margin-right: -10%;
+    margin-right: -11%;
     float: right;
     font-size: 30px;
     color: #302f2c;
@@ -25,34 +25,26 @@ header nav ul li {
 
 body {
     background-image: url(./images/notebook.jpg);
-    background-image 
-    height: 800px;
+    background-image height: 100%;
     width: 100%;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 18px;
 }
 
-main {
-    display:block
-}
-
 .polaroid {
     position:absolute;
-    margin-left: 70%;
-    margin-top: -11%;
+    margin-left: 63%;
+    margin-top:-15%;
 }
 
 h2 {
     text-align: left;
     margin-left: 3%;
+    margin-right: 5%;
     border-bottom: 2px solid #302f2c;
     font-size: 26px;
-}
-
-h2:before { 
-    content: '❃'
 }
 
 #about {
@@ -68,8 +60,14 @@ section {
     margin-bottom: 0%;
 }
 
-#about {
+.about {
     margin-left: 3%;
+    text-align: left;
+    padding-bottom: 2%
+}
+
+#about1 {
+    max-width: 775px;
 }
 
 #todo-header {
@@ -89,19 +87,17 @@ section {
     text-decoration:line-through;
 }
 
-article {
-    display: inline;
-    flex: 1 0 0;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    margin: 10px;
+.articles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
 }
 
-#coming-soon {
+article {
     background-color: transparent;
     border: none;
+    margin:2%;
 }
 
 button {
@@ -122,4 +118,103 @@ footer {
     border-top: 3px solid #302f2c;
     margin-left: 13%;
     margin-right: 7%;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        margin-left: 4%;
+    }
+    body {
+        margin-left: 4%;
+    }
+    .articles {
+    flex-direction: column;
+    }
+    .polaroid {
+        position:absolute;
+        margin-left: 57%;
+        margin-top:-15%;
+    }
+    #about1 {
+        max-width: 560px;
+    }
+    #about2 {
+        max-width: 600px;
+    }
+    header nav {
+        margin-top: 7%;
+        margin-right: -17%;
+        float: right;
+        font-size: 30px;
+        color: #302f2c;
+        rotate: 90deg;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-left: 2%;
+    }
+    body {
+        margin-left: 12%;
+    }
+    .articles {
+    flex-direction: column;
+    }
+    .polaroid {
+        position:absolute;
+        margin-left: 60%;
+        margin-top:-24%;
+    }
+    #about1 {
+        max-width: 400px;
+    }
+    #about2 {
+        max-width: 800px;
+    }
+    header nav {
+        margin-top: 7%;
+        margin-right: -53%;
+        float: right;
+        font-size: 30px;
+        color: #302f2c;
+        rotate: 90deg;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        margin-top: 50%;
+        margin-left: 2%;
+        font-size: 40px;
+    }
+
+    body {
+        margin-left: 75%;
+    }
+
+    h2 {
+        display: inline-flex;
+    }
+
+    .articles {
+    flex-direction: column;
+    }
+
+    .polaroid {
+        display:none;
+        position:absolute;
+        margin-left: 60%;
+        margin-top:-24%;
+    }
+
+    header nav {
+        margin-top: 15%;
+        margin-right: -110%;
+        float: right;
+        font-size: 30px;
+        color: #302f2c;
+        rotate: 90deg;
+    }
 }
