@@ -8,20 +8,9 @@
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
-<style>
-    section {
-        min-height: 300px;
-        min-width: 200px;
-    }
-
-    main {
-        display: block;
-    }
-</style>
-</head>
-
 <header>
     <h1>Hello there...</h1>
+    <box class="nav">
     <nav>
         <ul>
             <li><a href="#aboutme">About Me</a></li>
@@ -31,6 +20,7 @@
             <li><a href="#contact">Let's Chat</a></li>
         </ul>
     </nav>
+</box>
 </header>
 
 <body>
@@ -40,12 +30,9 @@
     </div>
     <section class="content" id="aboutme">
         <h2>A Little About Me</h2>
-        <p id="about">My name is Kyndal! I'm currently located in Washington state.  I'm worked in the administrative field for over <br>  
-        16 years now and have decided to make a BIG change in my career path, which is why you're here!<br>
+        <p class="about" id="about1">My name is Kyndal! I'm currently located in Washington state.  I've worked in the administrative field for over 16 years now and have decided to make a BIG change in my career path, which is why you're here!
         <br>
-        When I'm not working, in class or spending time with my kids, my hobbies include photography, riding my <br> 
-        motorcycle, and competitive speed shooting. I look forward to integrating my newly learned coding skills with my <br>
-        existing interests to create some really cool things!</p>
+        <p class="about" id="about2">When I'm not working, in class or spending time with my kids, my hobbies include photography, riding my motorcycle, and competitive speed shooting. I look forward to integrating my newly learned coding skills with my existing interests to create some really cool things!</p>
         <p id="todo-header">My To Do List:</p>
         <ul>
             <li class="todo" id="complete">Dream of creating a better future for myself</li>
@@ -56,9 +43,11 @@
     </section>
     <section class="content" id="portfolio">
         <h2>What I've Worked On</h2>
-            <article id="coming-soon"><img src="./assets/images/coming-soon.png" height="200px" width="200px"></article>
-            <article >Insert Horiseon info here</article>
-            <article id="coming-soon"><img src="./assets/images/coming-soon.png" height="200px" width="200px"></article>
+        <div class="articles">
+            <article><img src="./assets/images/coming-soon.png" height="200px" width="200px"></article>
+            <article><img src="./assets/images/website-rework-ss1.jpg" height="300px" width="500px"></article>
+            <article><img src="./assets/images/coming-soon.png" height="200px" width="200px"></article>
+        </div>
     </section>
     <section class="content" id="contact">
         <h2>Let's Chat</h2>
