@@ -29,3 +29,5 @@ Email Envelope Icon: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.onlin
 N/A
 
 ## Link
+
+Deployed application: https://kyndalbowers.github.io/my-portfolio/
